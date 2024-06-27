@@ -280,17 +280,46 @@ int main(){
 //     cout<<"Total no. of perfect cube numbers: "<<count;
 // }
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Start: ";
+//     cin>>n;
+//     int a,b=0,c;
+//     while(n!=0){
+//         a=n%10;
+//         n=n/10;
+//         b=b+a;
+//     }
+//     cout<<char(96+b);
+// }
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int square(int a){
+//     return a*a;
+// }
+// int main(){
+    
+//     for(int i=1;i<=5;i++){
+//         cout<<square(i)<<"\n";
+//     }
+//     return 0;
+// }
+
+#include<bits/stdc++.h>
 using namespace std;
+
+double circle(int r){
+    float area=3.143*r*r,circumference=2*3.143*r;
+    cout<<"Area is : "<<area<<endl;
+    cout<<"circumference is : "<<circumference; 
+    return 0;
+
+}
 int main(){
-    int n;
-    cout<<"Start: ";
-    cin>>n;
-    int a,b=0,c;
-    while(n!=0){
-        a=n%10;
-        n=n/10;
-        b=b+a;
-    }
-    cout<<char(96+b);
+    int radius=3;
+    circle(radius);
 }
