@@ -136,26 +136,161 @@ int main(){
 //         }
 //     }
 // }
+// #include<iostream>
+// using namespace std;
+// char reverse(string f){
+//     char temp;
+//     int n;
+//     n=sizeof(f);
+//     for(int i=0;i<n;i++){
+//         temp = f[i];
+//         f[i]=f[n-i-1];
+//         f[n-1-i]=temp;
+//     }
+//     for(int i=0;i<n;i++){
+//         cout<<f[i];
+//     }
+// }
+// int main(){
+//     string s;
+//     string *p;
+//     cout<<"Start : ";
+//     getline(cin,s);
+//     reverse(s);
+
+// }
+
+// #include<iostream>
+// #include<string>
+// #include<algorithm> 
+// using namespace std;
+// int main(){
+//     string s1="hello";
+//     string s2="bye";
+//     int a=432;
+//     reverse(s1.begin(),s1.end());
+//     cout<<s1.length()<<endl;
+//     cout<<s1.substr(4,7)<<endl;
+//     cout<<s1<<endl;
+//     string str =to_string(a);
+//     str=str+"1";
+//     cout<<str<<endl;
+//     cout<<a;
+// }
+
+// #include<iostream>
+// #include<algorithm>
+// #include<vector>
+// using namespace std;
+// int main(){
+//     vector<int> v1;
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(1);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(2);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(3);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(5);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(10);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(3);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(3);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(3);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(3);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     v1.push_back(3);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+    
+//     v1.push_back(1);
+//     cout<<"size is : "<<v1.size()<<endl;
+//     cout<<"capacity is : "<<v1.capacity()<<endl;
+
+//     cout<<v1[11];
+// }
+
+
+// #include<iostream>
+// #include<vector>
+// using namespace std;
+// int main(){
+//     vector<int> v1;
+//     v1.push_back(1);
+//     cout<<v1.capacity()<<endl;
+
+//     v1.push_back(7);
+//     cout<<v1.capacity()<<endl;
+
+//     v1.push_back(1);
+//     cout<<v1.capacity()<<endl;
+
+//     v1.push_back(1);
+//     cout<<v1.capacity()<<endl;
+
+// }
+
+// #include<iostream>
+// using namespace std;
+// bool cube(int a){
+//     int c;
+//     for(int i=1;i<=a/2;i++){
+//         c=i*i*i;
+//         if(c==a){
+//             return 1;
+//         }
+//     }
+//     return 0;
+// }
+// int main(){
+//     int arr[10]={2,4,7,9,8,16,64,49,5,10};
+//     cout<<"Start: ";
+//     int count=0;
+//     for(int i=0;i<sizeof(arr);i++){
+//         if(cube(arr[i])){
+//             cout<<arr[i]<<endl;
+//             count++;
+//         }
+//     }
+//     cout<<"Total no. of perfect cube numbers: "<<count;
+// }
+
 #include<iostream>
 using namespace std;
-char reverse(string f){
-    char temp;
-    int n;
-    n=sizeof(f);
-    for(int i=0;i<n;i++){
-        temp = f[i];
-        f[i]=f[n-i-1];
-        f[n-1-i]=temp;
-    }
-    for(int i=0;i<n;i++){
-        cout<<f[i];
-    }
-}
 int main(){
-    string s;
-    string *p;
-    cout<<"Start : ";
-    getline(cin,s);
-    reverse(s);
-
+    int n;
+    cout<<"Start: ";
+    cin>>n;
+    int a,b=0,c;
+    while(n!=0){
+        a=n%10;
+        n=n/10;
+        b=b+a;
+    }
+    cout<<char(96+b);
 }
