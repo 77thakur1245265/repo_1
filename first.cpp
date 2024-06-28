@@ -309,17 +309,130 @@ int main(){
 //     return 0;
 // }
 
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// double circle(int r){
+//     float area=3.143*r*r,circumference=2*3.143*r;
+//     cout<<"Area is : "<<area<<endl;
+//     cout<<"circumference is : "<<circumference; 
+//     return 0;
+
+// }
+// int main(){
+//     int radius=3;
+//     circle(radius);
+// }
+
+// #include<iostream>
+// using namespace std;
+
+//----------------------------------****************************************************************-----------------------------------
+
+#include<bits/stdc++.h>            
 using namespace std;
 
-double circle(int r){
-    float area=3.143*r*r,circumference=2*3.143*r;
-    cout<<"Area is : "<<area<<endl;
-    cout<<"circumference is : "<<circumference; 
-    return 0;
 
+
+
+int largest(int a,int b){
+    if(a>=b){
+        return a;
+    }else{
+        return b;
+    }
 }
-int main(){
-    int radius=3;
-    circle(radius);
+
+int smallest(int a,int b){
+    if(a<=b){
+        return a;
+    }else{
+        return b;
+    }
 }
+
+// int odd_between(int a,int b){
+//     for (int i = smallest(a,b); i < largest(a,b); i++)
+//     {
+//         if(i%2!=0){
+//             cout<<i<<" ";
+//         }
+//     }
+    
+// }
+
+// int main(){
+//     int a,b;
+//     cout<<"Start: ";
+//     cin>>a;
+//     cin>>b;
+//     odd_between(a,b);
+// }
+
+bool prime(int n){
+    int check;
+    if(n==1)return 1;
+    for(int i=2;i*i<=n;i++)
+    {
+        if(n%i!=0){
+            check = 1;
+        }else if(n%i==0){
+            return 0;
+        }
+    }
+    if(check==1){
+        return 1;
+    }
+}
+
+// #include<bits/stdc++.h>
+// using namespace std;
+
+// int main(){
+//     int a,b;
+//     cout<<"Start: ";
+//     cin>>a;
+//     cin>>b;
+//     for(int i=smallest(a,b);i<largest(a,b);i++)
+//     {
+//         if(prime(i)){
+//         cout<<i<<" is prime"<<endl;}
+//     // }else{
+//     //     cout<<i<<" is non prime"<<endl;
+//     // }
+//     }
+// }
+
+
+int sqrt(int n){
+    int a=n;
+    for(int i=2;i<=n/2;i++)
+    {
+        int k=i*i;
+        if(k==a){
+            return i;
+        }
+    }
+    return 0;
+}
+// int main(){
+//     int m=36,c;
+//     c=sqrt(m);
+//     if(c>0){
+//         cout<<"Yes "<<m<<" has a perfect square root = "<<c;
+//     }else{
+//         cout<<"No "<<m<<" has no perfect square root";
+//     }
+// }
+
+// int main(){
+//     for(int i=1;i<=4;i++){
+//         for(int k=i;k<=4;k++){
+//             cout<<" ";
+//         }
+//         for(int k=i;k>=1;k--){
+//             cout<<i;
+//         }
+//         cout<<endl;
+//     }
+// }
