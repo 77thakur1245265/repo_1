@@ -329,7 +329,7 @@ int main(){
 
 //----------------------------------****************************************************************-----------------------------------
 
-#include<bits/stdc++.h>            
+#include<bits/stdc++.h>          
 using namespace std;
 
 
@@ -436,3 +436,60 @@ int sqrt(int n){
 //         cout<<endl;
 //     }
 // }
+
+
+// int main(){
+//     int r=5,c=9;int a,b;
+//     for(int i=0;i<r;i++){
+//         for(int k=1;k<=c;k++){
+//             if(k==(r-i) || k==(r+i)){
+//                 cout<<"*";
+//             }
+//             else cout<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+// int main(){
+//     vector<int> s ;
+//     int element;
+//     for(int i=0;i<=5;i++){
+//         cin>>element;
+//         s.push_back(element);
+//     }
+//     for(int i=0;i<=5;i++){
+//         cout<<s[i]<<" ";
+//     }
+//     cout<<endl;
+//     for(int kuc:s){
+//         cout<<kuc<<" ";
+//     }
+// }
+
+int main(){
+    vector<int> n;
+    int x;
+    for(int i=0;i<7;i++){
+        int element;
+        cin>>element;
+        n.push_back(element);
+    }
+    // cout<<"OCCURENCE: ";
+    // cin>>x;
+    x=0;
+    int c,count=0,check=0;
+    for(int i=0;i<6;i++){
+        if(n[i+1]>=n[i]){
+            check=1;
+        }else{
+            check=0;
+            break;
+        }
+    }
+    if(check==1){
+        cout<<"yes its is sorted";
+    }else if(check==0){
+        cout<<"not its is not sorted";
+    }
+}
