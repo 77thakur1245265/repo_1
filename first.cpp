@@ -467,29 +467,39 @@ int sqrt(int n){
 //     }
 // }
 
+// int main(){
+//     vector<int> n;
+//     int x;
+//     for(int i=0;i<7;i++){
+//         int element;
+//         cin>>element;
+//         n.push_back(element);
+//     }
+//     // cout<<"OCCURENCE: ";
+//     // cin>>x;
+//     x=0;
+//     int c,count=0,check=0;
+//     for(int i=0;i<6;i++){
+//         if(n[i+1]>=n[i]){
+//             check=1;
+//         }else{
+//             check=0;
+//             break;
+//         }
+//     }
+//     if(check==1){
+//         cout<<"yes its is sorted";
+//     }else if(check==0){
+//         cout<<"not its is not sorted";
+//     }
+// }
+
+int factorial(int a){
+    if(a==0) return 1;
+    return a*factorial(a-1);
+}
+
 int main(){
-    vector<int> n;
-    int x;
-    for(int i=0;i<7;i++){
-        int element;
-        cin>>element;
-        n.push_back(element);
-    }
-    // cout<<"OCCURENCE: ";
-    // cin>>x;
-    x=0;
-    int c,count=0,check=0;
-    for(int i=0;i<6;i++){
-        if(n[i+1]>=n[i]){
-            check=1;
-        }else{
-            check=0;
-            break;
-        }
-    }
-    if(check==1){
-        cout<<"yes its is sorted";
-    }else if(check==0){
-        cout<<"not its is not sorted";
-    }
+    vector<vector<int>> v(5,vector<int>(3));
+    
 }
